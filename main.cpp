@@ -22,7 +22,7 @@ Adafruit_MQTT_Subscribe amount = Adafruit_MQTT_Subscribe(&mqtt, AIO_USERNAME "/f
 
 void setup() {
   Serial.begin(115200);
-  myservo.attach(4);
+  myservo.attach(4);  // Servo control pin GPIO 4
   Serial.println(F("RazorPay Payment Operated Door Prototype"));
   Serial.print("Connecting to WiFi: ");
   Serial.println(WLAN_SSID);
